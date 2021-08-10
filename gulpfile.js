@@ -44,7 +44,7 @@ function scripts() {
     .pipe(browserSync.stream())
 }
 
-function images() {
+function images() {  
     return src('app/images/**/*.*')
     .pipe(imagemin([
         imagemin.gifsicle({interlaced: true}),
